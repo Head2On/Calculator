@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 350px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: 93%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.buttons, .memory-buttons, .scientific-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+button.operator {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+button.clear {
+    color:black;
+    background-color: white;
+}
+
+button.memory-buttons {
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+.scientific-buttons {
+    margin-top: 10px;
+}
+
+.history {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
